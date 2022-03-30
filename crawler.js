@@ -17,7 +17,7 @@ const COOKIE = "_fbp=fb.2.1648649757903.618830472; visid_incap_1045467=9pxVAl+8S
 const HEADERS = {
     //'content-type': 'application/x-www-form-urlencoded',
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36',
-    //'cookie': COOKIE
+    'cookie': COOKIE
 }
 /*
 module.exports.getK = function(type, page){
