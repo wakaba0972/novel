@@ -45,7 +45,7 @@ module.exports.getK = function(type, page){
     return new Promise(function(resolve, reject){
         axios.get(URLS.t[type],
             {
-                withCredentials: true,
+                //withCredentials: true,
                 headers: HEADERS,
             }
         )
