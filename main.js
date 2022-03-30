@@ -6,5 +6,6 @@ var app = express()
     .get('/', (req, res)=> {
         crawler.getK('n', 1)
         .then(data=> res.send(data))
+        .catch(err=> console.log(err))
     })
     .listen(process.env.PORT || 3000)
