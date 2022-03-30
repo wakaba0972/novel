@@ -52,7 +52,7 @@ module.exports.getK = function(type, page){
             resolve(res.data)
         })
         .catch(err=> {
-            reject(err)
+            reject(err.response)
         })
     }
 )}
