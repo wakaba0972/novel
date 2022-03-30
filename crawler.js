@@ -43,11 +43,7 @@ module.exports.getK = function(type, page){
 
 module.exports.getK = function(type, page){
     return new Promise(function(resolve, reject){
-        axios.get(URLS.t[type],
-            {
-                //withCredentials: true,
-                headers: HEADERS,
-            }
+        axios.get('https://www.tongli.com.tw/NovelDetail.aspx?page=1&s=1',
         )
         .then(res=> {
             resolve(res.data)
