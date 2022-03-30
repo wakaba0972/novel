@@ -5,7 +5,7 @@ const URLS = {
         m: "https://www.kadokawa.com.tw/product_list298.htm"
         },
     't': {
-        n: "https://www.tongli.com.tw/NovelDetail.aspx",
+        n: "https://www.tongli.com.tw/NovelDetail.aspx?page=1&s=1",
         m: "https://www.tongli.com.tw/webpagebooks.aspx"
         },
     's': {
@@ -18,7 +18,7 @@ const COOKIEs = "incap_ses_934_1045467=5++pGmY+qjVo8PGiljz2DAiARGIAAAAAO3PDQry3V
 const HEADERS = {
     //'content-type': 'application/x-www-form-urlencoded',
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36',
-    'cookie': COOKIEs
+    //'cookie': COOKIEs
 }
 /*
 module.exports.getK = function(type, page){
@@ -43,7 +43,7 @@ module.exports.getK = function(type, page){
 
 module.exports.getK = function(type, page){
     return new Promise(function(resolve, reject){
-        axios.get(URLS.k[type],
+        axios.get(URLS.t[type],
             {
                 withCredentials: true,
                 headers: HEADERS,
