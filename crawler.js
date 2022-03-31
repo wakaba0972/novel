@@ -5,7 +5,7 @@ const URLS = {
         m: "https://www.kadokawa.com.tw/product_list298.htm"
         },
     't': {
-        n: "https://www.tongli.com.tw/NovelDetail.aspx?page=1&s=1",
+        n: "https://www.phyworld.idv.tw/BA_PHY_2B/S2_2B_1/2-3_projection_01.htm",
         m: "https://www.tongli.com.tw/webpagebooks.aspx"
         },
     's': {
