@@ -5,7 +5,7 @@ const URLS = {
         m: "https://www.kadokawa.com.tw/product_list298.htm"
         },
     't': {
-        n: "https://www.tongli.com.tw/NovelDetail.aspx",
+        n: "https://www.taipower.com.tw/tc/page.aspx?mid=206&cid=406&cchk=b6134cc6-838c-4bb9-b77a-0b0094afd49d",
         m: "https://www.tongli.com.tw/webpagebooks.aspx"
         },
     's': {
@@ -45,10 +45,6 @@ module.exports.getK = function(type, page){
     return new Promise(function(resolve, reject){
         axios.get(URLS.t[type],
             {
-                params: {
-                    page: 1,
-                    s: 1
-                },
                 headers: HEADERS,
             }
         )
