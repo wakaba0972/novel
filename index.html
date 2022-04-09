@@ -1,8 +1,13 @@
 <html>
-    <head>
-
-    </head>
     <body>
-
+        <p>0</p>
     </body>
+    <script>
+        let count = 0
+        let num = document.getElementsByTagName('p')[0]
+        setInterval(()=> {
+            ++count
+            num.innerText = count
+        }, 1000)
+    </script>
 </html>
